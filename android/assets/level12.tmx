@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="left-up" width="20" height="20" tilewidth="15" tileheight="15" nextobjectid="25">
+ <tileset firstgid="1" name="Bricks" tilewidth="15" tileheight="15" tilecount="66" columns="22">
+  <image source="Bricks.png" width="340" height="47"/>
+ </tileset>
+ <layer name="Background Color" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJwTY2BgEBvFo3iYYWY0PNDuGcWjeDhiALweIhU=
+  </data>
+ </layer>
+</map>

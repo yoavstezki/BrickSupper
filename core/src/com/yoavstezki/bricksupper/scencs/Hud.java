@@ -20,6 +20,7 @@ public class Hud implements Disposable {
 
     private Stage stage;
     private Viewport viewport;
+    private Label scoreLabel;
 
     private Integer score;
 
@@ -33,13 +34,13 @@ public class Hud implements Disposable {
         Table table = new Table();
         defineTable(table);
 
-        Label scoreLabel = new Label(String.format("%06d", score), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
+        scoreLabel = new Label(String.format("%06d", score), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
         Label levelLabel = new Label("1", new Label.LabelStyle(new BitmapFont(), Color.WHITE));
         Label levelTitleLabel = new Label("LEVEL", new Label.LabelStyle(new BitmapFont(), Color.WHITE));
         Label scoreTitleLabel = new Label("SCORE", new Label.LabelStyle(new BitmapFont(), Color.WHITE));
 
-        table.add(scoreTitleLabel).expandX().padTop(10);
-        table.add(levelTitleLabel).expandX().padTop(10);
+        table.add(scoreTitleLabel).expandX();
+        table.add(levelTitleLabel).expandX();
         table.row();
         table.add(scoreLabel).expandX();
         table.add(levelLabel).expandX();
@@ -61,4 +62,11 @@ public class Hud implements Disposable {
     public Stage getStage() {
         return stage;
     }
+
+    public void addScore(int value){
+        score+= value;
+        scoreLabel.setText(String.format("%06d", score));
+    }
+
+
 }

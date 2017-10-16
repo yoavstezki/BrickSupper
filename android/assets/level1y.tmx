@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="left-up" width="9" height="25" tilewidth="30" tileheight="15" nextobjectid="46">
+ <tileset firstgid="1" name="eVVIl" tilewidth="30" tileheight="15" tilecount="2288" columns="26">
+  <image source="eVVIl.png" width="798" height="1320"/>
+ </tileset>
+ <layer name="Background Color" width="9" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzjZmBg4AFibjy0KhCrEaDtgdiBAB0JxFEEaHzuGHXPqHuGo3sAWRYq+A==
+  </data>
+ </layer>
+ <layer name="Graphic Layer" width="9" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztzrkNgDAQRNG1xE3/BVAHVXAYGjAQcHfAJ3OAhANnMNKTZqUJ1gQiA0ZMMA+3z1So0aCFRofe2sxYsGLDjgOntQmVSIQYCVJkyJXff+8U6r2XDl079D/fywXI2Rte
+  </data>
+ </layer>
+ <objectgroup name="Brick">
+  <object id="1" x="210.24" y="120.344" width="30" height="15"/>
+  <object id="2" x="210.607" y="135.381" width="30" height="15"/>
+  <object id="3" x="209.874" y="149.893" width="30" height="15"/>
+  <object id="4" x="119.716" y="119.787" width="30" height="15"/>
+  <object id="5" x="120.066" y="134.964" width="30" height="15"/>
+  <object id="6" x="120.066" y="149.964" width="30" height="15"/>
+  <object id="7" x="29.4128" y="151.104" width="30" height="15"/>
+  <object id="8" x="29.6742" y="135.26" width="30" height="15"/>
+  <object id="9" x="29.6742" y="119.26" width="30" height="15"/>
+  <object id="10" x="29.947" y="45.1648" width="30" height="15"/>
+  <object id="11" x="29.947" y="60.1648" width="30" height="15"/>
+  <object id="12" x="29.947" y="75.1648" width="30" height="15"/>
+  <object id="13" x="60.1317" y="45.16" width="30" height="15"/>
+  <object id="14" x="60.13" y="60.16" width="30" height="15"/>
+  <object id="15" x="60.13" y="75.16" width="30" height="15"/>
+  <object id="16" x="90.13" y="45.16" width="30" height="15"/>
+  <object id="17" x="90.13" y="60.16" width="30" height="15"/>
+  <object id="18" x="90.13" y="75.16" width="30" height="15"/>
+  <object id="19" x="120.13" y="45.16" width="30" height="15"/>
+  <object id="20" x="120.13" y="60.16" width="30" height="15"/>
+  <object id="21" x="120.13" y="75.16" width="30" height="15"/>
+  <object id="22" x="150.13" y="45.16" width="30" height="15"/>
+  <object id="23" x="180.13" y="45.16" width="30" height="15"/>
+  <object id="24" x="210.13" y="45.16" width="30" height="15"/>
+  <object id="25" x="150.13" y="60.16" width="30" height="15"/>
+  <object id="26" x="180.13" y="60.16" width="30" height="15"/>
+  <object id="27" x="210.13" y="60.16" width="30" height="15"/>
+  <object id="28" x="150.13" y="75.16" width="30" height="15"/>
+  <object id="29" x="180.13" y="75.16" width="30" height="15"/>
+  <object id="30" x="210.13" y="75.16" width="30" height="15"/>
+ </objectgroup>
+ <objectgroup name="Bound">
+  <object id="34" x="0" y="0" width="3" height="375"/>
+  <object id="35" x="267" y="0" width="3" height="375"/>
+ </objectgroup>
+ <objectgroup name="Ground">
+  <object id="40" x="3.35969" y="324.865" width="263" height="50"/>
+ </objectgroup>
+ <objectgroup name="Roof">
+  <object id="44" x="0.333333" y="0.333333" width="269.5" height="13.3333"/>
+ </objectgroup>
+</map>

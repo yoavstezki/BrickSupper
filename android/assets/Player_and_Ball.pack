@@ -1,0 +1,25 @@
+Player_and_Ball.png
+format:RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ball
+    rotate: false
+    xy: 223, 59
+    size: 12, 12
+    orig: 12, 12
+    offset: 0, 0
+    index: -1
+fireball
+    rotate: false
+    xy: 223, 59
+    size: 12, 12
+    orig: 12, 12
+    offset: 0, 0
+    index: -1
+pad
+    rotate: false
+    xy: 223, 0
+    size: 75, 15
+    orig: 75, 15
+    offset: 0, 0
+    index: -1
