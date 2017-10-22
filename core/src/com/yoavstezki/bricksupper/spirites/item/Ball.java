@@ -22,7 +22,7 @@ public class Ball extends Sprite {
     private World world;
     private TextureRegion ball;
     private Boolean isStart;
-    private State currentStat = State.STAND;
+    private State currentState = State.STAND;
     private Vector2 hitPosVector;
 
     public Ball(PlayScreen screen, Boolean isStart) {
@@ -34,7 +34,6 @@ public class Ball extends Sprite {
         bodyDef.position.set(32 / BrickSupper.ppm, 32 / BrickSupper.ppm);
         bodyDef.type = bodyDef.type.DynamicBody;
         body = world.createBody(bodyDef);
-
 
         FixtureDef fixtureDef = new FixtureDef();
         CircleShape shape = new CircleShape();
@@ -55,9 +54,9 @@ public class Ball extends Sprite {
         Vector2 pos = body.getPosition();
         Vector2 linearVelocity = body.getLinearVelocity();
 
-        if (currentStat.equals(State.UP)) {
-            if (linearVelocity.y >= 0.8f) {
-                body.setLinearVelocity(linearVelocity.x, 0.8f);
+        if (currentState.equals(State.UP)) {
+            if (linearVelocity.y >= 1.0f) {
+                body.setLinearVelocity(linearVelocity.x, 1.0f);
             }
 
             if (hitPosVector != null) {
@@ -67,9 +66,9 @@ public class Ball extends Sprite {
                 body.applyLinearImpulse(0, 1.0f, pos.x, pos.y, true);
             }
 
-        } else if (currentStat.equals(State.DOWN) || currentStat.equals(State.STAND)) {
-            if (linearVelocity.y <= -0.8f) {
-                body.setLinearVelocity(linearVelocity.x, -0.8f);
+        } else if (currentState.equals(State.DOWN) || currentState.equals(State.STAND)) {
+            if (linearVelocity.y <= -1.0f) {
+                    body.setLinearVelocity(linearVelocity.x, -1.0f);
             }
 
             if (hitPosVector != null) {
@@ -81,20 +80,12 @@ public class Ball extends Sprite {
         }
     }
 
-    public void hit() {
-        if (currentStat.equals(State.UP)) {
-            setCurrentStat(State.DOWN);
-        } else if (currentStat.equals(State.DOWN) || currentStat.equals(State.STAND)) {
-            setCurrentStat(State.UP);
-        }
+    public State getCurrentState() {
+        return currentState;
     }
 
-    public State getState() {
-        return currentStat;
-    }
-
-    public void setCurrentStat(State stat) {
-        this.currentStat = stat;
+    public void setCurrentState(State stat) {
+        this.currentState = stat;
     }
 
     public void onPad(Pad pad) {

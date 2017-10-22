@@ -27,7 +27,7 @@ public class SideBound extends InteractiveObject {
         return bounds.getX() == 0;
     }
 
-    public Vector2 getVector(){
-        return new Vector2(bounds.x, bounds.y);
+    public Vector2 getVector() {
+        return new Vector2(bounds.x / BrickSupper.ppm, bounds.y / BrickSupper.ppm);
     }
 }

@@ -53,6 +53,6 @@
   <object id="40" x="3.35969" y="324.865" width="263" height="50"/>
  </objectgroup>
  <objectgroup name="Roof">
-  <object id="44" x="0.333333" y="0.333333" width="269.5" height="13.3333"/>
+  <object id="44" x="0" y="0" width="270" height="13"/>
  </objectgroup>
 </map>

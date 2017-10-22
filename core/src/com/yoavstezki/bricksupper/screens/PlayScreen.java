@@ -141,8 +141,6 @@ public class PlayScreen implements Screen {
                 world.destroyJoint(edge.joint);
             }
 
-//            ball.body.applyLinearImpulse(new Vector2(0, 1f), ball.body.getWorldCenter(), true);
-
             needToDisconnect = false;
             isDisconnected = true;
         }
@@ -172,7 +170,7 @@ public class PlayScreen implements Screen {
         }
         if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) {
             needToDisconnect = true;
-            ball.setCurrentStat(Ball.State.UP);
+            ball.setCurrentState(Ball.State.UP);
         }
 
     }
